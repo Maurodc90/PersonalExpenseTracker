@@ -1,0 +1,79 @@
+[
+  {
+    "type": false,
+    "date": "2026-09-01",
+    "amount": 1500.00,
+    "category": "jewelry",
+    "account": "bank",
+    "note": "Proposal ring for Elçin"
+  },
+  {
+    "type": false,
+    "date": "2026-09-05",
+    "amount": 85.00,
+    "category": "dining",
+    "account": "credit card",
+    "note": "Dinner with Elçin"
+  },
+  {
+    "type": false,
+    "date": "2026-09-10",
+    "amount": 45.00,
+    "category": "gifts",
+    "account": "cash",
+    "note": "Gift for Elçin"
+  },
+  {
+    "type": true,
+    "date": "2026-09-01",
+    "amount": 3200.00,
+    "category": "salary",
+    "account": "bank",
+    "note": "IntelliJ developer salary"
+  },
+  {
+    "type": true,
+    "date": "2026-09-12",
+    "amount": 150.00,
+    "category": "freelancing",
+    "account": "bank",
+    "note": "Italian-English translation job"
+  },
+  {
+    "type": true,
+    "date": "2026-09-15",
+    "amount": 89.99,
+    "category": "freelancing",
+    "account": "bank",
+    "note": "Udemy course subtitle work"
+  },
+  {
+    "type": false,
+    "date": "2026-09-03",
+    "amount": 120.00,
+    "category": "groceries",
+    "account": "cash"
+  },
+  {
+    "type": false,
+    "date": "2026-09-08",
+    "amount": 65.00,
+    "category": "utilities",
+    "account": "bank"
+  },
+  {
+    "type": false,
+    "date": "2026-09-14",
+    "amount": 29.99,
+    "category": "education",
+    "account": "credit card",
+    "note": "Udemy Java Masterclass"
+  },
+  {
+    "type": false,
+    "date": "2026-09-07",
+    "amount": 40.00,
+    "category": "transport",
+    "account": "cash"
+  }
+]

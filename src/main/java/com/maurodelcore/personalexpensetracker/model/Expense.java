@@ -1,3 +1,4 @@
+// Expense.java
 package com.maurodelcore.personalexpensetracker.model;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -5,18 +6,35 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+/**
+ * Represents a financial transaction, either income or expenditure.
+ *
+ * <p>Each expense holds the transaction type, date, amount, category,
+ * payment account, and an optional note. Null notes are excluded
+ * from JSON output via {@code @JsonInclude}.</p>
+ *
+ */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class Expense {
 
+    /** {@code true} for income, {@code false} for expenditure. */
+    private boolean type;
 
-    private boolean type; //Expense type — income or expenditure (true = income, false = expenditure)
-    private String date; //Date — when the expense or income occurred
-    private double amount; //Amount — the amount spent or received
-    private String category; //Category — e.g. groceries, utilities, salary
-    private String account; //Account — source of funds (cash, bank, credit card)
+    /** Date of the transaction in {@code yyyy-MM-dd} format. */
+    private String date;
+
+    /** Transaction amount in the local currency. */
+    private double amount;
+
+    /** Category of the transaction (e.g. groceries, salary, dining). */
+    private String category;
+
+    /** Payment source (e.g. bank, cash, credit card). */
+    private String account;
+
+    /** Optional description of the transaction. Omitted from JSON when null. */
     @JsonInclude(JsonInclude.Include.NON_NULL)
-    private String note; //Note — optional description
-
+    private String note;
 }
